@@ -104,9 +104,10 @@ body {
   margin-right: 8px;
 }
 
-/* .banner-right {
-  margin-right: 145px;
-} */
+.banner-right {
+  margin-right: 0;
+  margin-left: auto;
+}
 
 .banner-right img {
   width: 556px;
