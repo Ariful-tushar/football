@@ -60,41 +60,55 @@ body {
 
 .banner-details {
   display: flex;
-}
-
-.cover-left {
   margin-left: 156px;
+  margin-right: 140px;
+  /* justify-content: center; */
 }
-.cover-left-details {
-  width: 485px;
 
+/* .banner-left {
+  margin-left: 156px;
+} */
+
+.banner-left {
   margin-right: 102px;
-  margin-top: 20px;
+}
+
+.banner-left-details {
+  width: 485px;
+  margin-top: 70px;
   margin-bottom: 27px;
 }
 
-.cover-left-details h1 {
+.banner-left-details h1 {
   color: white;
   font-size: 64px;
   margin: 0;
+  font-weight: 700px;
 }
-.cover-left-button {
-  margin-top: 27px;
+.banner-left-button {
+  margin-top: 25px;
   width: 168px;
   height: 44px;
   background: #e02c6d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cover-left-button a {
+.banner-left-button a {
   text-decoration: none;
   color: white;
+  font-weight: 500px;
+  font-size: 16px;
+  margin-right: 8px;
 }
 
-.cover-right {
+/* .banner-right {
   margin-right: 145px;
-}
+} */
 
-.cover-right img {
+.banner-right img {
   width: 556px;
   height: 456px;
 }
