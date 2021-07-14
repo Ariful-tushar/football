@@ -290,15 +290,8 @@ results
  ------------------------------------------------------------------*/
 
 @media only screen and (max-width: 688px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
   .menu,
   .results,
-  .players,
-  .gallery,
   footer {
     display: none;
   }
@@ -348,16 +341,20 @@ results
     overflow-x: visible;
   }
   .banner:hover .banner-right img {
-    transform: scale(1.15);
+    transform: scale(1);
     transition: transform 1s ease-in-out;
   }
 
   /* media for players  */
-  /* .players {
+  .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 24px;
-  } */
+  }
+
+  .player-details {
+    width: 300px;
+  }
 
   /* media for gallery  */
 
@@ -368,6 +365,6 @@ results
   }
 
   .gallery-image-container img {
-    width: 50%;
+    width: 80%;
   }
 }
