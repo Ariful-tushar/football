@@ -9,6 +9,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* menu bar style  */
 
 .menu {
@@ -68,6 +74,7 @@ body {
 
 .banner-details {
   display: flex;
+
   margin-left: 156px;
   margin-right: 140px;
 }
@@ -282,8 +289,56 @@ results
  ************************mobile devices ***************************
  ------------------------------------------------------------------*/
 
-/* @media only screen and (max-width: 688px) {
-  .menu-details {
+@media only screen and (max-width: 688px) {
+  .menu,
+  .players,
+  .results,
+  .gallery,
+  footer {
     display: none;
   }
-} */
+
+  /* media for banner */
+  .banner {
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    justify-items: center;
+  }
+
+  .banner-left {
+    margin: 0;
+  }
+
+  .banner-left-details {
+    margin-top: 46px;
+    width: 278px;
+  }
+
+  .banner-left-details h1 {
+    font-size: 36px;
+    color: #ffffff;
+  }
+
+  .banner-left-button {
+    width: 168px;
+    height: 44px;
+    margin-top: 30px;
+  }
+
+  .banner-right {
+    margin-top: 50px;
+    margin-bottom: 62px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .banner-right img {
+    width: 329px;
+    height: 259.17px;
+  }
+}
