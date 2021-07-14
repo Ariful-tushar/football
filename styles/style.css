@@ -290,9 +290,14 @@ results
  ------------------------------------------------------------------*/
 
 @media only screen and (max-width: 688px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .menu,
-  .players,
   .results,
+  .players,
   .gallery,
   footer {
     display: none;
@@ -338,7 +343,31 @@ results
     margin-right: 0;
   }
   .banner-right img {
-    width: 329px;
+    width: 264px;
     height: 259.17px;
+    overflow-x: visible;
+  }
+  .banner:hover .banner-right img {
+    transform: scale(1.15);
+    transition: transform 1s ease-in-out;
+  }
+
+  /* media for players  */
+  /* .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+  } */
+
+  /* media for gallery  */
+
+  .gallery-image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .gallery-image-container img {
+    width: 50%;
   }
 }
