@@ -172,6 +172,30 @@ player styles
   font-weight: 400px;
 }
 
+/* -----------------------------------------------------------------------
+gallery
+----------------------------------------------------------------------- */
+
+.gallery {
+  padding: 0 10%;
+}
+
+.gallery-image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+  margin-bottom: 156px;
+}
+
+.gallery-images {
+  width: 300px;
+}
+
+.gallery-images img {
+  width: 100%;
+}
+
 /*----------------------------------------------------------------------
                      footer 
   ---------------------------------------------------------------------- */
