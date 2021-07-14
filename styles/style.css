@@ -290,9 +290,7 @@ results
  ------------------------------------------------------------------*/
 
 @media only screen and (max-width: 688px) {
-  .menu,
-  .results,
-  footer {
+  .menu {
     display: none;
   }
 
@@ -347,6 +345,8 @@ results
 
   /* media for players  */
   .players {
+    margin-top: 47px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 24px;
@@ -358,6 +358,9 @@ results
 
   /* media for gallery  */
 
+  .gallery {
+    margin-bottom: 50px;
+  }
   .gallery-image-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -366,5 +369,24 @@ results
 
   .gallery-image-container img {
     width: 80%;
+  }
+
+  /* media for results  */
+  .results {
+    margin-bottom: 70px;
+  }
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* media for footer  */
+  .bottom-part {
+    margin-bottom: 185px;
+  }
+
+  .bottom-part img {
+    width: 278px;
+    height: auto;
   }
 }
