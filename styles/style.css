@@ -127,7 +127,7 @@ body {
 
 .banner:hover .banner-right img {
   transform: scale(1.2);
-  transition: transform 2s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 /* ---------------------------------------------------------------------------------
@@ -138,6 +138,7 @@ player styles
 
 .players {
   display: grid;
+  justify-content: center;
   margin-left: 13%;
   margin-right: 17%;
   margin-top: 70px;
@@ -177,23 +178,60 @@ gallery
 ----------------------------------------------------------------------- */
 
 .gallery {
-  padding: 0 10%;
+  margin: 0 10%;
+  margin-bottom: 165px;
+}
+
+.gallery h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .gallery-image-container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-
-  margin-bottom: 156px;
-}
-
-.gallery-images {
-  width: 300px;
 }
 
 .gallery-images img {
   width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------
+results
+--------------------------------------------------------------------------------- */
+.results {
+  margin: 0 10% 165px;
+}
+
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.result {
+  width: 200px;
+  height: 350px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+.result img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.result-detail {
+  color: white;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.result-detail h3 {
+  margin: 0;
 }
 
 /*----------------------------------------------------------------------
@@ -235,3 +273,17 @@ gallery
   font-weight: 400px;
   color: #000000;
 }
+
+/* ------------------------------------------------------------- 
+************************** medua query *************************
+ -------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+ ************************mobile devices ***************************
+ ------------------------------------------------------------------*/
+
+/* @media only screen and (max-width: 688px) {
+  .menu-details {
+    display: none;
+  }
+} */
